@@ -17,7 +17,6 @@ function App() {
       });
   }, []);
 
-  // 🔹 2. Redirect if URL matches `/qr/redirect/<key>`
   useEffect(() => {
     const parts = window.location.pathname.split("/");
     if (parts[1] === "qr" && parts[2] === "redirect") {
@@ -28,7 +27,7 @@ function App() {
     }
   }, [redirects]);
 
-  return <div>🔀 Redirector is running...</div>;
+  return <div>Opening...</div>;
 }
 
 export default App;
